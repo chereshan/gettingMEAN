@@ -6,6 +6,7 @@
     "start": "index.js"
   },
   "dependencies": {
+    "base64-vlq": "^0.0.5",
     "bootstrap": "^5.3.3",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
