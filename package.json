@@ -3,12 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "@lib/base64-vlq": "^0.1.1",
     "base64-vlq": "^0.0.5",
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",

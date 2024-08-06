@@ -4,11 +4,11 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('../app_server/routes');
-var usersRouter = require('../app_server/routes/users');
+var indexRouter = require('./app_server/routes/index');
+var usersRouter = require('./app_server/routes/users');
 
 var app = express();
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 3002
 
 // view engine setup
 app.set('views', path.join(__dirname, 'app_server', 'views'));
@@ -44,5 +44,8 @@ module.exports = app;
 
 app.listen(port, () => console.log(
     `Express запущен на http://localhost:${port} \n` +
-    `http://localhost:${port}/textbook \n`+
+    `http://localhost:${port}/users \n`+
+    `http://localhost:${port}/location \n`+
+    `http://localhost:${port}/location/review/new \n`+
+    `http://localhost:${port}/about \n`+
     `нажмите Ctrl+C для завершения.` ))
